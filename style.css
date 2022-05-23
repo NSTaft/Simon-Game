@@ -13,12 +13,19 @@ h1 {
 border: solid black 1px;
 width: 150px;
 height: 150px;
-animation: blink 1s infinite;
 }
 
 #one {
     background-color: red;
+    animation-name: tile1;
+    animation-duration: 0.25s;
 }
+@keyframes tile1 {
+    0%   {background-color: red;}
+    50%  {background-color: white;}
+    100% {background-color: red;}
+}
+
 
 #two {
     background-color: blue;

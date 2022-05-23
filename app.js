@@ -28,6 +28,7 @@ function computerSequence(){
     console.log(computer.currentChoice)
     for (let tile of computer.currentChoice) {
         //blink animation from css
+        // tile at index takes new id for a flash?
     }
   }
 
