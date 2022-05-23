@@ -1,26 +1,20 @@
 SIMON
 
-Premise: Test your memory by matching the pattern displayed during each round. Rounds will progressively speed up the display and limit your time to hesitate.
-User Story
-As a user I want to
-.
-.
-.
-.
-.
-.
+Test your memory by matching the randomized pattern displayed during each round. Beginning with 1 panel in round 1, each round will progressively speed up the display, add a panel to the sequence, and decreases your allowed reaction time.
+
+
 Technologies Used
 HTML
 CSS
 JavaScript (logic and DOM manipulation)
-Canvas (Optional)
+
 Wireframes:
 what game will look like
 
 
-Circle with 5 different colored panels, 4 forming the outer ring and 1 circle in the middle.
+Grid with 5 different colored panels, 4 forming the outer perimeter and 1 in the middle.
 
-Start button - Round indicator
+Start button in the middle - Round indicator at the top
 
 Computer randomly chooses a panel(s), incrementing as game progresses
     Player "locked out" of clicking on game board at this time
