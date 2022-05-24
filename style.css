@@ -19,30 +19,20 @@ text-align: center;
 
 #red {
     background-color: red;
-    animation-name: tile1;
-    animation-duration: 0.25s;
 }
 
 #blue {
     background-color: blue;
-    animation-name: tile2;
-    animation-duration: 0.25s;
 }
 
 #green {
     background-color: green;
-    animation-name: tile3;
-    animation-duration: 0.25s;
 }
 
 #purple {
     background-color: purple;
-    animation-name: tile4;
-    animation-duration: 0.25s;
 }
 
 #orange {
     background-color: orange;
-    animation-name: tile5;
-    animation-duration: 0.25s;
 }

@@ -5,13 +5,17 @@
 // Player's sequence array
 let playerChoice = [];
 // Computer's sequence array
-let computerChoice = ["red", "blue", "red", "green"];
+let computerChoice = [];
 let colorChoices = ["red", "green", "blue", "purple", "orange"]
 
 //Call and declare the elements from HTML and CSS page
 let tiles = document.querySelectorAll(".tile");
 console.log(tiles);
-let h1 = document.querySelectorAll(".h1")
+
+// Iterates through tiles, add click, calls playerSequence
+for (const tile of tiles) {
+    tile.addEventListener("click", playerSequence);
+    }
 
 
 function computerSequence() {
@@ -38,21 +42,36 @@ function computerSequence() {
         if (index === computerChoice.length) {
             clearInterval(blink);
         } else {
-            myNextTile.style.background = "white";    
+            myNextTile.style.background = "white";
            }
+           // IF Tile == next tile, color change from tile-white-tile
+        if (myTile === myNextTile) {
+            myTile.style.background = myTile.id;
+        }
     }, 1000)
 }
 
-// function playerSequence() {
-//     for (const tile of tiles) {
-//         tile.addEventListener("click", function(){
-//             console.log(tile);
-//         })
-//     }
-// }
+function playerSequence(e) {
+    playerChoice.push(e.target.id);
+    console.log(playerChoice);
+    //setTimeout for player selection opportunity
+            for (let i = 0; i < playerChoice.length; i++) {
+                console.log(i)
+                if(playerChoice[i] !== computerChoice[i]){
+                    alert("You lose");
+                    computerChoice = [];
+                    playerChoice = [];
+                    return;
+                } else if(playerChoice.length === computerChoice.length) {
+                    alert("Round passed");
+                    playerChoice = [];
+                    computerSequence();
+                }
+                }
+            }
 
 function playGame () {
     computerSequence();
-//     playerSequence();
 }
-setTimeout(playGame, 3000);
+
+setTimeout(playGame, 1000);
