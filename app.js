@@ -17,7 +17,6 @@ for (const tile of tiles) {
     tile.addEventListener("click", playerSequence);
     }
 
-
 function computerSequence() {
     // Generate random number from tiles
     const randomTile = colorChoices[Math.floor(Math.random() * colorChoices.length)];
@@ -70,8 +69,8 @@ function playerSequence(e) {
                 }
             }
 
-function playGame () {
-    computerSequence();
-}
 
-setTimeout(playGame, 1000);
+
+// Start button
+document.getElementById("button").addEventListener("click", computerSequence)
+

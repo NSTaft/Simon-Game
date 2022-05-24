@@ -9,6 +9,10 @@ h1 {
     justify-content: center;
 }
 
+#button {
+    
+}
+
 .tile {
 border: solid black 1px;
 border-radius: 25px;
