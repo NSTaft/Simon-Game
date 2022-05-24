@@ -29,16 +29,25 @@ function computerSequence(){
     for (let tile of computer.currentChoice) {
         // through each iteration, blink by referencing css class
         // tile at index takes new class for a blink?
+        // tile.classList.add("blink") 
     }
   }
+
+
+function playerSequence() {
+    for (const tile of tiles) {
+        tile.addEventListener("click", function(){
+            console.log(tile);
+        })
+    }
+}
+
+
+
 
 function playGame () {
     currentTurn = computer;
     computerSequence();
-
-    for (const tile of tiles) {
-        // adds listener to each box of boxes
-        tile.addEventListener("click", function(){
-            console.log(tile);
-        })}};
+    playerSequence();
+}
 setTimeout(playGame, 3000);

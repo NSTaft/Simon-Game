@@ -11,12 +11,19 @@ h1 {
 
 .tile {
 border: solid black 1px;
+border-radius: 25px;
 width: 150px;
 height: 150px;
+text-align: center;
 }
 
 #one {
     background-color: red;
+    animation-name: tile1;
+    animation-duration: 0.25s;
+}
+
+.blink {
     animation-name: tile1;
     animation-duration: 0.25s;
 }
@@ -36,27 +43,23 @@ height: 150px;
     0%   {background-color: blue;}
     50%  {background-color: white;}
     100% {background-color: blue;}
-
 }
 
 #three {
     background-color: green;
     animation-name: tile3;
     animation-duration: 0.25s;
-
 }
 @keyframes tile3 {
     0%   {background-color: green;}
     50%  {background-color: white;}
     100% {background-color: green;}
-
 }
 
 #four {
     background-color: purple;
     animation-name: tile4;
     animation-duration: 0.25s;
-
 }
 @keyframes tile4{
     0%   {background-color: purple;}
@@ -68,7 +71,6 @@ height: 150px;
     background-color: orange;
     animation-name: tile5;
     animation-duration: 0.25s;
-
 }
 @keyframes tile5 {
     0%   {background-color: orange;}
