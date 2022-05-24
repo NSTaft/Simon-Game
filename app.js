@@ -27,12 +27,13 @@ function computerSequence(){
     computer.currentChoice.push(randomTile);
     console.log(computer.currentChoice)
     for (let tile of computer.currentChoice) {
-        //blink animation from css
-        // tile at index takes new id for a flash?
+        // through each iteration, blink by referencing css class
+        // tile at index takes new class for a blink?
     }
   }
 
 function playGame () {
+    currentTurn = computer;
     computerSequence();
 
     for (const tile of tiles) {
