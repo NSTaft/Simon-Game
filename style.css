@@ -17,64 +17,32 @@ height: 150px;
 text-align: center;
 }
 
-#one {
+#red {
     background-color: red;
     animation-name: tile1;
     animation-duration: 0.25s;
 }
 
-.blink {
-    animation-name: tile1;
-    animation-duration: 0.25s;
-}
-@keyframes tile1 {
-    0%   {background-color: red;}
-    50%  {background-color: white;}
-    100% {background-color: red;}
-}
-
-
-#two {
+#blue {
     background-color: blue;
     animation-name: tile2;
     animation-duration: 0.25s;
 }
-@keyframes tile2 {
-    0%   {background-color: blue;}
-    50%  {background-color: white;}
-    100% {background-color: blue;}
-}
 
-#three {
+#green {
     background-color: green;
     animation-name: tile3;
     animation-duration: 0.25s;
 }
-@keyframes tile3 {
-    0%   {background-color: green;}
-    50%  {background-color: white;}
-    100% {background-color: green;}
-}
 
-#four {
+#purple {
     background-color: purple;
     animation-name: tile4;
     animation-duration: 0.25s;
 }
-@keyframes tile4{
-    0%   {background-color: purple;}
-    50%  {background-color: white;}
-    100% {background-color: purple;}
-}
 
-#five {
+#orange {
     background-color: orange;
     animation-name: tile5;
     animation-duration: 0.25s;
-}
-@keyframes tile5 {
-    0%   {background-color: orange;}
-    50%  {background-color: white;}
-    100% {background-color: orange;}
-
 }
