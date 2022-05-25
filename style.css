@@ -32,6 +32,10 @@ h2 {
     font-size: 30px;
     font-family: 'Games', sans-serif;
     align-items: right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 #button {

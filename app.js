@@ -25,7 +25,7 @@ function computerSequence() {
     // console.log(randomTile);
     // Insert random number into sequence
     computerChoice.push(randomTile);
-    // console.log(computerChoice);
+    console.log(computerChoice);
     let index = 0;
     // Grab computerchoice at index 0, change background for blink
     document.getElementById(computerChoice[0]).style.background = "white";
@@ -54,13 +54,16 @@ function computerSequence() {
 
 function playerSequence(e) {
     playerChoice.push(e.target.id);
-    // console.log(playerChoice);
+    console.log(playerChoice);
             for (let i = 0; i < playerChoice.length; i++) {
                 console.log(i)
                 if(playerChoice[i] !== computerChoice[i]){
                     alert("You lose");
                     computerChoice = [];
                     playerChoice = [];
+                    roundCount.innerHTML = "Round " + 1;
+                    round = 2;
+                    console.log(computerChoice, playerChoice)
                     return;
                 } else if(playerChoice.length === computerChoice.length) {
                     // alert("Round passed");
