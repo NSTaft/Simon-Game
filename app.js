@@ -1,11 +1,8 @@
-// NEEDED 
-//RANDOM INCREMENTING COMPUTER CHOICE, STORED IN ARRAY
-// START BUTTON WITH PLAY GAME FUNCTION AS ARGUMENT
-
 // Player's sequence array
 let playerChoice = [];
 // Computer's sequence array
 let computerChoice = [];
+// Having color choices array allows us to change background later, using  style.background =  .id"color"
 let colorChoices = ["red", "green", "blue", "purple", "orange"]
 let roundCount = document.getElementById("roundCount");
 let round = 2;

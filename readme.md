@@ -1,34 +1,33 @@
 SIMON
 
-Test your memory by matching the randomized pattern displayed during each round. Beginning with 1 panel in round 1, each round will progressively speed up the display, add a panel to the sequence, and decreases your allowed reaction time.
+
+Test your memory by matching the randomized pattern displayed during each round. Beginning with 1 tile in round 1, each round will add a tile to the sequence until you are unable to match the computer. This game was designed to be played through a web browser.
 
 
-Technologies Used
+TECHNOLOGIES USED
+
 HTML
 CSS
 JavaScript (logic and DOM manipulation)
 
-Wireframes:
-what game will look like
 
+LAYOUT OF THE GAME
 
-Grid with 5 different colored panels, 4 forming the outer perimeter and 1 in the middle.
+Grid with 5 different colored tiles.
 
-Start button in the middle - Round indicator at the top
+Start button to begin the computer's random sequencing.
 
-Computer randomly chooses a panel(s), incrementing as game progresses
-    Player "locked out" of clicking on game board at this time
-    Panel lights up, plays sound effect
-    Function pauses after initial round selection, replays for player to watch again.
-    Switch to player turn
+Computer randomly chooses a tile(s), incrementing as game progresses
+    Selected panel will flash briefly before the player's turn.
 
 Player must select same panel(s) in the same order as computer
-    Player click now available.
-    Must select same order as computer before a timeout.
-    If timeout or player input is incorrect, 
+    Must select tiles same order as computer.
+    If player input is incorrect, 
         display GAME OVER message.
 
-After every 3 levels-
-    Computer selection speeds up
-    Player timeout is shorter
+
+KNOWN BUGS
+
+Player's last selection in each round is accepted as correct, even when wrong.
+
 
