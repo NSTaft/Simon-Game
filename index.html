@@ -7,21 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon</title>
     <link rel="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/games" rel="stylesheet">
+                
 </head>
 
 <body>
     <h1 class="h1">Simon</h1>
-    <h2>Test your memory!</h2>
-    <main class="divcontainer">
-        <div class="buttons">
+    <h2>Test your memory</h2>
+    <main class="columncontainer">
+        <div class="leftdiv">
             <button id="button">Start</button>
+            <p id="roundCount">Round 1</p>
         </div>
         <div class="board">
             <div class="tile" id="red"></div>
             <div class="tile" id="blue"></div>
             <div class="tile" id="green"></div>
             <div class="tile" id="purple"></div>
-            <div class="tile" id="orange"></div>
+            <div class="tile center" id="orange"></div>
         </div>
     </main>
     <script src="app.js"></script>

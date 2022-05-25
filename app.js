@@ -7,10 +7,12 @@ let playerChoice = [];
 // Computer's sequence array
 let computerChoice = [];
 let colorChoices = ["red", "green", "blue", "purple", "orange"]
+let roundCount = document.getElementById("roundCount");
+let round = 2;
 
 //Call and declare the elements from HTML and CSS page
 let tiles = document.querySelectorAll(".tile");
-console.log(tiles);
+// console.log(tiles);
 
 // Iterates through tiles, add click, calls playerSequence
 for (const tile of tiles) {
@@ -20,10 +22,10 @@ for (const tile of tiles) {
 function computerSequence() {
     // Generate random number from tiles
     const randomTile = colorChoices[Math.floor(Math.random() * colorChoices.length)];
-    console.log(randomTile);
+    // console.log(randomTile);
     // Insert random number into sequence
     computerChoice.push(randomTile);
-    console.log(computerChoice);
+    // console.log(computerChoice);
     let index = 0;
     // Grab computerchoice at index 0, change background for blink
     document.getElementById(computerChoice[0]).style.background = "white";
@@ -52,8 +54,7 @@ function computerSequence() {
 
 function playerSequence(e) {
     playerChoice.push(e.target.id);
-    console.log(playerChoice);
-    //setTimeout for player selection opportunity
+    // console.log(playerChoice);
             for (let i = 0; i < playerChoice.length; i++) {
                 console.log(i)
                 if(playerChoice[i] !== computerChoice[i]){
@@ -62,8 +63,9 @@ function playerSequence(e) {
                     playerChoice = [];
                     return;
                 } else if(playerChoice.length === computerChoice.length) {
-                    alert("Round passed");
+                    // alert("Round passed");
                     playerChoice = [];
+                    roundCount.innerHTML = "Round " + round++;
                     computerSequence();
                 }
                 }
