@@ -57,6 +57,7 @@ function playerSequence(e) {
     console.log(playerChoice);
             for (let i = 0; i < playerChoice.length; i++) {
                 console.log(i)
+                // Losing condition, reset arrays and round.
                 if(playerChoice[i] !== computerChoice[i]){
                     alert("You lose");
                     computerChoice = [];
@@ -65,6 +66,7 @@ function playerSequence(e) {
                     round = 2;
                     console.log(computerChoice, playerChoice)
                     return;
+                    // Winning condition
                 } else if(playerChoice.length === computerChoice.length) {
                     // alert("Round passed");
                     playerChoice = [];
@@ -75,7 +77,16 @@ function playerSequence(e) {
             }
 
 
+function playGame() {
+    computerChoice = [];
+    playerChoice = [];
+    roundCount.innerHTML = "Round " + 1;
+    round = 2;
+    console.log(computerChoice, playerChoice)
+    computerSequence();
 
+}
 // Start button
-document.getElementById("button").addEventListener("click", computerSequence)
+document.getElementById("button").addEventListener("click", playGame)
+
 
