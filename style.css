@@ -1,16 +1,35 @@
 h1 {
     text-align: center;
+    font-size:  50px;
 }
-.container {
+h2 {
+    text-align: center;
+}
+
+.divcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.board {
     display: grid;
     grid-template-columns: auto auto;
     border: solid black 1px;
     gap: 15px 15px;
     justify-content: center;
+    max-width: 400px;
+    border-radius: 25px;
+}
+
+.buttons{
+    justify-content: center;
+    float: right;
 }
 
 #button {
-    
+    font-size: 30px;
+    border-radius: 25px;
 }
 
 .tile {
