@@ -56,10 +56,10 @@ function playerSequence(e) {
                 console.log(i)
                 // Losing condition, reset arrays and round.
                 if(playerChoice[i] !== computerChoice[i]){
-                    alert("You lose");
+                    // alert("You lose");
                     computerChoice = [];
                     playerChoice = [];
-                    roundCount.innerHTML = "Round " + 1;
+                    roundCount.innerHTML = "GAME OVER";
                     round = 2;
                     console.log(computerChoice, playerChoice)
                     return;
