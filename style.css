@@ -13,10 +13,13 @@ h2 {
 }
 
 .columncontainer {
-    display: grid;
-    max-width: 80%;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 50%ß
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 20px; */
     
 }
 
@@ -40,7 +43,6 @@ h2 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
 #button {
