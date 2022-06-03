@@ -65,10 +65,14 @@ function playerSequence(e) {
                     return;
                     // Winning condition
                 } else if(playerChoice.length === computerChoice.length) {
-                    // alert("Round passed");
                     playerChoice = [];
                     roundCount.innerHTML = "Round " + round++;
-                    computerSequence();
+                    // Conditional for 5 complete rounds, victory
+                    if(roundCount.innerHTML === "Round 6") {
+                        roundCount.innerHTML = "You win!";
+                    } else {
+                        computerSequence();
+                    }
                 }
                 }
             }
